@@ -2,6 +2,7 @@
 /*imports*/
 @import "partials/basics";
 @import "partials/layout";
+@import "partials/typography";
 
 /*general*/
 
@@ -15,6 +16,10 @@ html *{
 
 a{
     text-decoration: none;
+}
+
+article h2{
+    font-family: sans-serif;
 }
 
 /*layout*/
