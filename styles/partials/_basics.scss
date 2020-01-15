@@ -18,7 +18,7 @@ $black: #070707;
 /*buttons*/
 
 .drop-down-menu-item{
-    max-width: 90vw;
+    max-width: 100vw;
     background: $yellow;
     text-align: center;
     font-size: 200%;
@@ -73,6 +73,10 @@ main article{
 
     background-color: $yellow;
     color: $white;
+}
+
+main article:first-of-type{
+    background-color: $black;
 }
 
 main article:nth-child(3n-1){
