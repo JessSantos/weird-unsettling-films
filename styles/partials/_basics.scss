@@ -1,0 +1,86 @@
+/*colours*/
+
+$blue: #ABC3C9;
+$light-mauve: #E0DCD3;
+$light-puce: #CCBE9F;
+$puce: #382119;
+$white: #F5F7F7;
+$peach: #DDC085;
+$yellow: #EFA40F;
+$black: #070707;
+
+/*hamburger menu*/
+
+.hamburger-menu{
+    display: none;
+}
+
+/*buttons*/
+
+.drop-down-menu-item{
+    max-width: 90vw;
+    background: $yellow;
+    text-align: center;
+    font-size: 200%;
+    padding: 0.5rem;
+    margin: 0.5rem  1rem;
+
+    &:hover{
+        background: $blue;
+    }
+
+    &:hover a{
+        color: $black;
+    }
+
+    @media(width: 1024px){        
+        .drop-down-menu-item{
+            height: 32.5rem;
+            width: 47.75rem;
+            margin: 1rem;
+    }
+    }
+}
+
+
+.drop-down-menu-item a{
+    &::before{
+        content: "<<  "
+    }
+    &::after{
+        content: "  >>"
+    }
+    
+    color: $white;
+
+    @media(width: 1024px){
+        
+        .drop-down-menu-item{
+            height: 32.5rem;
+            width: 47.75rem;
+            margin: 1rem;
+        }
+    }
+}
+
+/*articles*/
+
+main article{
+    padding: 2rem;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+
+    background-color: $yellow;
+    color: $white;
+}
+
+main article:nth-child(3n-1){
+    background-color: $blue;
+    color: $black;
+}
+
+main article:nth-child(3n){
+    background-color: $peach;
+    color: $black;
+}
