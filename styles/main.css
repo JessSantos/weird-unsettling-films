@@ -1,60 +1,170 @@
 /*imports*/
 /*colours*/
-/*hamburger menu*/
+/*breakpoints*/
 @import url("https://fonts.googleapis.com/css?family=Teko:300,400,500,700&display=swap&subset=latin-ext");
-.hamburger-menu {
-  display: none;
+a img {
+  max-width: 30vw;
 }
 
 /*buttons*/
-.drop-down-menu-item {
-  max-width: 100vw;
+header ul li {
   background: #EFA40F;
-  text-align: center;
   font-size: 200%;
   padding: 0.5rem;
   margin: 0.5rem  1rem;
 }
 
-.drop-down-menu-item:hover {
+header ul li:hover {
   background: #ABC3C9;
 }
 
-.drop-down-menu-item:hover a {
+header ul li:hover a {
   color: #070707;
 }
 
 @media (width: 1024px) {
-  .drop-down-menu-item .drop-down-menu-item {
+  header ul li .drop-down-menu-item {
     height: 32.5rem;
     width: 47.75rem;
     margin: 1rem;
   }
 }
 
-.drop-down-menu-item a {
-  color: #F5F7F7;
+/*colours*/
+/*breakpoints*/
+a img {
+  max-width: 30vw;
 }
 
-.drop-down-menu-item a::before {
-  content: "<<  ";
+/*buttons*/
+header ul li {
+  background: #EFA40F;
+  font-size: 200%;
+  padding: 0.5rem;
+  margin: 0.5rem  1rem;
 }
 
-.drop-down-menu-item a::after {
-  content: "  >>";
+header ul li:hover {
+  background: #ABC3C9;
+}
+
+header ul li:hover a {
+  color: #070707;
 }
 
 @media (width: 1024px) {
-  .drop-down-menu-item a .drop-down-menu-item {
+  header ul li .drop-down-menu-item {
     height: 32.5rem;
     width: 47.75rem;
     margin: 1rem;
   }
 }
 
-/*articles*/
-main article {
-  padding: 2rem;
+/*general colours*/
+header {
+  background-color: #070707;
+}
+
+main {
+  background-color: #ABC3C9;
+}
+
+footer {
+  background-color: #382119;
+}
+
+/*---------------------largest boxes layout---------------------*/
+body {
+  display: block;
+  margin: 0;
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  body header {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 1 / 5 / 2;
+  }
+  body main {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: 1 / 2 / 5 / 4;
+  }
+  body footer {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: 5 / 1 / 6 /4;
+  }
+}
+
+/*---------------------largest boxes' contents layout---------------------*/
+header {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  /*sizing*/
+}
+
+header .site-logo {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+  max-height: 16rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+}
+
+header .hamburger-menu {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 3 / 2 / 4;
+  max-height: 16rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+}
+
+header ul {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 2 / 1 / 3 / 4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,110 +173,59 @@ main article {
       -ms-flex-flow: column;
           flex-flow: column;
   text-align: center;
-  background-color: #EFA40F;
-  color: #F5F7F7;
+  padding: 0;
+  margin-top: -6rem;
 }
 
-main article:first-of-type {
-  background-color: #070707;
+header a {
+  width: 40vw;
 }
 
-main article:nth-child(3n-1) {
-  background-color: #ABC3C9;
-  color: #070707;
+header .hamburger-menu img {
+  width: 30vw;
 }
 
-main article:nth-child(3n) {
-  background-color: #DDC085;
-  color: #070707;
+@media (min-width: 1024px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  header .hamburger-menu {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  header ul {
+    margin-top: 0;
+  }
 }
 
+/*drop-down menu*/
 /*fonts*/
 /*Teko*/
 /*adding a font family*/
-/*general*/
-.html {
-  font-size: 0.625;
-  /*changes base font size to 10, so that using rems is easier*/
-}
-
-html * {
-  list-style: none;
-}
-
 a {
   text-decoration: none;
 }
 
-article h2 {
-  font-family: sans-serif;
+ul {
+  list-style: none;
 }
 
-/*layout*/
-nav, footer {
-  background-color: #070707;
-  width: 100%;
+header ul a {
+  color: #F5F7F7;
 }
 
-main {
-  background-color: #070707;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+header ul a::before {
+  content: "<<  ";
 }
 
-.container {
-  max-width: 1024px;
-  width: 90vw;
-}
-
-/*navigation*/
-nav div, nav ul {
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-}
-
-nav ul {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto;
-  padding-bottom: 2rem;
-}
-
-nav ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-nav img {
-  max-width: 30%;
-  margin: 2rem;
-}
-
-footer {
-  background-color: #382119;
+header ul a::after {
+  content: "  >>";
 }
 /*# sourceMappingURL=main.css.map */

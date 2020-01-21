@@ -9,18 +9,26 @@ $peach: #DDC085;
 $yellow: #EFA40F;
 $black: #070707;
 
-/*hamburger menu*/
+/*breakpoints*/
+$breakpoint-phone-sm: 320px;
+$breakpoint-phone-lg: 480px;
+$breakpoint-tablet: 780px;
+$breakpoint-desktop: 1024px;
 
-.hamburger-menu{
-    display: none;
+
+a img{
+    max-width: 30vw;
 }
 
 /*buttons*/
 
-.drop-down-menu-item{
-    max-width: 100vw;
+
+
+
+// /*hamburger menu*/
+
+header ul li{
     background: $yellow;
-    text-align: center;
     font-size: 200%;
     padding: 0.5rem;
     margin: 0.5rem  1rem;
@@ -42,49 +50,80 @@ $black: #070707;
     }
 }
 
+// .hamburger-menu{
+//     display: none;
+// }
 
-.drop-down-menu-item a{
-    &::before{
-        content: "<<  "
-    }
-    &::after{
-        content: "  >>"
-    }
+// /*buttons*/
+
+// .drop-down-menu-item{
+//     max-width: 100vw;
+//     background: $yellow;
+//     text-align: center;
+//     font-size: 200%;
+//     padding: 0.5rem;
+//     margin: 0.5rem  1rem;
+
+    // &:hover{
+    //     background: $blue;
+    // }
+
+    // &:hover a{
+    //     color: $black;
+    // }
+
+    // @media(width: 1024px){        
+    //     .drop-down-menu-item{
+    //         height: 32.5rem;
+    //         width: 47.75rem;
+    //         margin: 1rem;
+    // }
+    // }
+// }
+
+
+// .drop-down-menu-item a{
+//     &::before{
+//         content: "<<  "
+//     }
+//     &::after{
+//         content: "  >>"
+//     }
     
-    color: $white;
+//     color: $white;
 
-    @media(width: 1024px){
+//     @media(width: 1024px){
         
-        .drop-down-menu-item{
-            height: 32.5rem;
-            width: 47.75rem;
-            margin: 1rem;
-        }
-    }
-}
+//         .drop-down-menu-item{
+//             height: 32.5rem;
+//             width: 47.75rem;
+//             margin: 1rem;
+//         }
+//     }
+// }
 
-/*articles*/
+// /*articles*/
 
-main article{
-    padding: 2rem;
-    display: flex;
-    flex-flow: column;
-    text-align: center;
+// main article{
+//     padding: 2rem;
+//     display: flex;
+//     flex-flow: column;
+//     text-align: center;
 
-    background-color: $yellow;
-    color: $white;
-}
+//     background-color: $yellow;
+//     color: $white;
+// }
 
-main article:first-of-type{
-    background-color: $black;
-}
+// main article:first-of-type{
+//     background-color: $black;
+// }
 
-main article:nth-child(3n-1){
-    background-color: $blue;
-    color: $black;
-}
+// main article:nth-child(3n-1){
+//     background-color: $blue;
+//     color: $black;
+// }
 
-main article:nth-child(3n){
-    background-color: $peach;
-    color: $black;
-}
+// main article:nth-child(3n){
+//     background-color: $peach;
+//     color: $black;
+// }

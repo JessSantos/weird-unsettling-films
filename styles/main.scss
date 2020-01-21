@@ -4,69 +4,61 @@
 @import "partials/layout";
 @import "partials/typography";
 
-/*general*/
+// /*general*/
 
-.html{
-    font-size: 0.625; /*changes base font size to 10, so that using rems is easier*/
-}
+// .html{
+//     font-size: 0.625; /*changes base font size to 10, so that using rems is easier*/
+// }
 
-html *{
-    list-style: none;
-}
+// html *{
+//     list-style: none;
+// }
 
-a{
-    text-decoration: none;
-}
+// a{
+//     text-decoration: none;
+// }
 
-article h2{
-    font-family: sans-serif;
-}
+// article h2{
+//     font-family: sans-serif;
+// }
 
-/*layout*/
+// /*layout*/
 
-nav, footer{
-    background-color: $black;
-    width: 100%;
-}
+// nav, footer{
+//     background-color: $black;
+//     width: 100%;
+// }
 
-main{
-    background-color: $black;
-    display: flex;
-    flex-flow: column;
-    justify-items: center;
-    align-items: center;
-}
-
-.container{
-    max-width: 1024px;
-    width: 90vw;
-}
-
-/*navigation*/
+// main{
+//     background-color: $black;
+//     display: flex;
+//     flex-flow: column;
+//     justify-items: center;
+//     align-items: center;
+// }
 
 
-nav div, nav ul{
-    padding: 0;
-    display: flex;
-    flex-flow: column;
-}
-nav ul{
-    justify-content: center;
-    margin: 0 auto;
-    padding-bottom: 2rem;
-}
+// /*navigation*/
 
-nav ul li{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-}
 
-nav img{
-    max-width: 30%;
-    margin: 2rem;
-}
+// nav div, nav ul{
+//     padding: 0;
+//     display: flex;
+//     flex-flow: column;
+// }
+// nav ul{
+//     justify-content: center;
+//     margin: 0 auto;
+//     padding-bottom: 2rem;
+// }
 
-footer{
-    background-color: $puce;
-}
+// nav ul li{
+//     display: flex;
+//     flex-flow: column;
+//     justify-content: center;
+// }
+
+
+// footer{
+//     background-color: $puce;
+// }

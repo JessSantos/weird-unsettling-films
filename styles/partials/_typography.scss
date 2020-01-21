@@ -12,3 +12,23 @@ $reg-weight-bold: 700;
 $line-height: 1.5;
 
 
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    ul a{
+        color: $white;
+
+        &::before{
+            content: "<<  "
+        }
+        &::after{
+            content: "  >>"
+        }
+    }
+}
