@@ -85,6 +85,12 @@ header{
     }
 }
 
+main .container > a{
+    height: 4.2rem;
+    &:nth-child(2n){
+        background-color: $peach;
+    }
+}
 
 /*drop-down menu*/
 

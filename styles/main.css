@@ -205,10 +205,22 @@ header .hamburger-menu img {
   }
 }
 
+main .container > a {
+  height: 4.2rem;
+}
+
+main .container > a:nth-child(2n) {
+  background-color: #DDC085;
+}
+
 /*drop-down menu*/
 /*fonts*/
 /*Teko*/
 /*adding a font family*/
+h1 {
+  display: none;
+}
+
 a {
   text-decoration: none;
 }
