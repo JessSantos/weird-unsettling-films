@@ -21,7 +21,7 @@ body{
     @include center-flex;
     font-size: 3vw;
 
-    background-image: url(/img/main/tv.jpg);
+    background-image: url(img/main/tv.jpg);
     background-repeat: no-repeat;
     background-size: 100vw;;
     padding: 2vw;
@@ -77,7 +77,7 @@ body{
     .explanation{
         @include center-flex;
 
-        background-image: url(/img/main/tv-screen.png);
+        background-image: url(img/main/tv-screen.png);
         background-repeat: no-repeat;
         background-size: 100vw;
         background-position-y: 30%;
@@ -129,7 +129,7 @@ body{
 
     .full-list{
         @include center-flex;
-        background-image: url(/img/main/background-wall.png);
+        background-image: url(img/main/background-wall.png);
         background-repeat: no-repeat;
         background-size: 100vw;
         color: $light-green;
