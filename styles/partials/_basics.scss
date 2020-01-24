@@ -1,13 +1,15 @@
 /*colours*/
 
-$blue: #ABC3C9;
-$light-mauve: #E0DCD3;
-$light-puce: #CCBE9F;
-$puce: #382119;
-$white: #F5F7F7;
-$peach: #DDC085;
-$yellow: #EFA40F;
-$black: #070707;
+$dark-blue: #1B2D44;
+$dove-gray: #566574;
+$light-green: #7CA790;
+$dark-green: #667973;
+$light-yellow: #D9CFA9;
+$sand: #BCB097;
+$dark-sand: #847973;
+$mauve: #BCADA7;
+$black: #000000;
+$white: #FFFFFF;
 
 /*breakpoints*/
 $breakpoint-phone-sm: 320px;
@@ -15,115 +17,16 @@ $breakpoint-phone-lg: 480px;
 $breakpoint-tablet: 780px;
 $breakpoint-desktop: 1024px;
 
+/*container widths*/
+$mobile-width: 90vw;
 
-a img{
-    max-width: 30vw;
-}
+/*mixins*/
 
-/*buttons*/
-
-
-
-
-// /*hamburger menu*/
-
-header ul li{
-    background: $yellow;
-    font-size: 200%;
-    padding: 0.5rem;
-    margin: 0.5rem  1rem;
-
-    &:hover{
-        background: $blue;
-    }
-
-    &:hover a{
-        color: $black;
-    }
-
-    @media(width: 1024px){        
-        .drop-down-menu-item{
-            height: 32.5rem;
-            width: 47.75rem;
-            margin: 1rem;
-    }
-    }
-}
-
-// .hamburger-menu{
-//     display: none;
-// }
-
-// /*buttons*/
-
-// .drop-down-menu-item{
-//     max-width: 100vw;
-//     background: $yellow;
-//     text-align: center;
-//     font-size: 200%;
-//     padding: 0.5rem;
-//     margin: 0.5rem  1rem;
-
-    // &:hover{
-    //     background: $blue;
-    // }
-
-    // &:hover a{
-    //     color: $black;
-    // }
-
-    // @media(width: 1024px){        
-    //     .drop-down-menu-item{
-    //         height: 32.5rem;
-    //         width: 47.75rem;
-    //         margin: 1rem;
-    // }
-    // }
-// }
-
-
-// .drop-down-menu-item a{
-//     &::before{
-//         content: "<<  "
-//     }
-//     &::after{
-//         content: "  >>"
-//     }
+@mixin center-flex{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
     
-//     color: $white;
-
-//     @media(width: 1024px){
-        
-//         .drop-down-menu-item{
-//             height: 32.5rem;
-//             width: 47.75rem;
-//             margin: 1rem;
-//         }
-//     }
-// }
-
-// /*articles*/
-
-// main article{
-//     padding: 2rem;
-//     display: flex;
-//     flex-flow: column;
-//     text-align: center;
-
-//     background-color: $yellow;
-//     color: $white;
-// }
-
-// main article:first-of-type{
-//     background-color: $black;
-// }
-
-// main article:nth-child(3n-1){
-//     background-color: $blue;
-//     color: $black;
-// }
-
-// main article:nth-child(3n){
-//     background-color: $peach;
-//     color: $black;
-// }
+}

@@ -26,10 +26,14 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
+  <!--font awesome-->
+  <script src="https://kit.fontawesome.com/b036754592.js" crossorigin="anonymous"></script>
 
+  <!--linked style sheets-->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="styles/main.css">
 
+  <!--meta tags-->
   <meta name="description" content="Small site reviewing weird, strange, unusual, and unsettling films.">
   <meta name="keywords" content="weird, strange, unusual, unsettling, films, film reviews, shorts, stop motion, animation, movie, movies, lists, reviews">
 
@@ -46,95 +50,84 @@
 
   <header>
 
+    <nav class="dropdown">
+      <a href="#" class="dropdown-button"><i class="fas fa-bars"></i></a> 
+        <ul class="dropdown-content">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">shorts</a></li>
+          <li><a href="#">articles</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
 
-
-    <a class="site-logo" href="index.html">
-      <img src="img/logo.svg" title="weird unsettling films logo"
-        alt="weird unsettling films logo">
-      <h1>Weird, Unsettling, and Unusual Films</h1>
-    </a>
-
-
-      <a href="index.html" class="hamburger-menu"><img src="img/hamburger-menu-tv.svg" title="tv hamburger menu"
-          alt="tv hamburger menu"></a>
-
-      <ul>
-        <li><a href="construction.html">Movies</a></li>
-        <li><a href="construction.html">Shorts</a></li>
-        <li><a href="construction.html">Articles</a></li>
-        <li><a href="construction.html">News</a></li>
-        <li><a href="construction.html">Random</a></li>
-        <li><a href="construction.html">About</a></li>
-      </ul>
+    </nav>
 
 
 
   </header>
 
-  <main>
+  <main class="main-page">
+
+    <!--banner-->
+
+    <div class="banner">
+
+      <div class="banner-container">
+        <h1>Weird Unsettling Films</h1>
+        <p>Help me get to the first page of google! Share my website with your friends!</p>
+      </div>
+
+    </div>
+
+    <!--site explanation-->
+    <div class="explanation">
+      <article class="explanation-container">
+        <h2>What are we doing here?</h2>
+        <p>This website is a school assignment, meant to show up on the first Google search page when someone looks for "weird unsettling films". It's a genre that's hard to describe exactly, because they are all slightly different. Some are more thought-provoking and  artistic, some are just an uncanny valley level of badly done.</p>
+        <p>Whatever your interests, there is likely to be a weird, unsettling, and generally strange film that might appeal to you. This site will be updated regularly, so please keep checking back! You might stumble upon your next favourite movie!</p>
+      </article>
+
+    </div>
 
     <!--articles / content-->
 
-    <div class="container">
-
+    <div class="content">
 
       <a href="construction.html">
         <article>
-          <h2>Highlighted films</h2>
-          <p>Click here to see the ever-updating recommended top 10 films of the season. Currently, the focus is more on
-            films that feel as cold as Canada is: all of these films and shorts are from Canadian creators, and evoke
-            the darkness and depth of winter. You can learn about Canadian folktales or simply find yourself in these
-            stories and their characters. Keep checking back regularly to keep up to date with the eerie and strange!
+          <h2>Highlighted Films</h2>
+          <p>Click here to see the ever-updating recommended top 10 films of the season. Currently, the focus is more on films that feel as cold as Canada is: all of these films and shorts are from Canadian creators, and evoke the darkness and depth of winter. You can learn about Canadian folktales or simply find yourself in these stories and their characters. 
           </p>
         </article>
       </a>
 
       <a href="construction.html">
         <article>
-          <a href="construction.html">
-            <h2>Highlighted shorts</h2>
-            <p>Don't have time for a feature length film? Shorts are perfect. This is a list of classic shorts that
-              evoke the heebie jeebies, or are otherwise a bit weird and inventive. Push boundaries andexplore the
-              versatility of film with this ever-updating list!</p>
-        </article>
-      </a>
-
-      <a href="construction.html">
-        <article>
-          <a href="construction.html">
-            <h2>Highlighted Stop Motion</h2>
-            <p>Do you enjoy tv shows and movies from your childhood that gave you nightmares, but also inspired
-              adventure? Stop motion is a very versatile genre, and attracts creators who have a keen eye for detail.
-              This is an ever-changing list, and the current focus is on folklore. Enjoy!</p>
-        </article>
-      </a>
-
-      <a href="construction.html">
-        <article>
-          <a href="construction.html">
-            <h2>highlighted live action</h2>
-            <p>Sometimes a familiar genre can make things very unfamiliar. This is a regularly updating list of
-              live-action films and shorts that were both unsettling and, well, weird! Experience the opposite of ASMR
-              with a good serving of popcorn, and keep checking back!</p>
-        </article>
-      </a>
-
-      <a href="something-unexpected.html">
-        <article>
-          <h2>Full List of reviewed media</h2>
-          <p>Know you saw something on here that you wanted to watch, but don't feel like scrolling through articles
-            forever? You can search for it here! Though you may find something unexpected!</p>
+            <h2>Highlighted Shorts</h2>
+            <p>Don't have time for a feature length film? Shorts are perfect. This is a list of classic shorts that evoke the heebie jeebies, or are otherwise a bit weird and inventive. Push boundaries and explore the versatility of film with this ever-updating list!</p>
         </article>
       </a>
 
     </div>
 
+    <a class="full-list" href="something-unexpected.html">
+      <article>
+        <h2>Full List of Reviewed Media</h2>
+        <p>Know you saw something on here that you wanted to watch, but don't feel like scrolling through articles forever? You can search for it here! Though you may find something unexpected ...</p>
+      </article>
+    </a>
+
   </main>
 
   <footer>
-    <p>
-      &copy; Jessica Santos
-    </p>
+
+    <div class="contact-logos">
+      <a href="facebook.com" ><i class="fab fa-facebook-square"></i></a>
+      <a href="gmail.com"><i class="fas fa-envelope-square"></i></a>
+      <a href="twitter.com"><i class="fab fa-twitter-square"></i></a>
+    </div>
+    
   </footer>
 
 
