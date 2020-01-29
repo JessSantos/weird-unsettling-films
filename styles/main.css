@@ -1074,7 +1074,7 @@ footer i:hover {
   }
   .banner {
     background-color: none;
-    background-image: url("../../img/main/tv.jpg");
+    background-image: url("../img/main/tv.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -2180,7 +2180,7 @@ footer i:hover {
   }
   .banner {
     background-color: none;
-    background-image: url("../../img/main/tv.jpg");
+    background-image: url("../img/main/tv.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
