@@ -31,7 +31,7 @@ h1, h2, h3, li{
 }
 
 h1{
-    font-size: 6vw;
+    font-size: 10vw;
 }
 
 h2{font-size: 3vw;}
@@ -61,6 +61,9 @@ p{
             color: $dove-gray;
             background-color: $mauve;
             padding: 0.8rem;
+        }
+        p{
+            line-height: 2;
         }
     
 }

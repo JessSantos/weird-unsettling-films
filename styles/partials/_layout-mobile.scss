@@ -194,6 +194,7 @@ header {
     .content {
         @include center-flex;
         background-color: $dark-blue;
+        flex-flow: column;
 
         a {
             color: $black;

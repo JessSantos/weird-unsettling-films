@@ -39,7 +39,7 @@ h1, h2, h3, li {
 }
 
 h1 {
-  font-size: 6vw;
+  font-size: 10vw;
 }
 
 h2 {
@@ -66,6 +66,9 @@ p {
     color: #566574;
     background-color: #BCADA7;
     padding: 0.8rem;
+  }
+  .banner p {
+    line-height: 2;
   }
 }
 
@@ -94,7 +97,7 @@ h1, h2, h3, li {
 }
 
 h1 {
-  font-size: 6vw;
+  font-size: 10vw;
 }
 
 h2 {
@@ -121,6 +124,9 @@ p {
     color: #566574;
     background-color: #BCADA7;
     padding: 0.8rem;
+  }
+  .banner p {
+    line-height: 2;
   }
 }
 
@@ -385,6 +391,7 @@ header .dropdown:hover .dropdown-content {
       -ms-flex-align: center;
           align-items: center;
   background-color: #1B2D44;
+  flex-flow: column;
 }
 
 .main-page .content a {
@@ -541,7 +548,7 @@ h1, h2, h3, li {
 }
 
 h1 {
-  font-size: 6vw;
+  font-size: 10vw;
 }
 
 h2 {
@@ -568,6 +575,9 @@ p {
     color: #566574;
     background-color: #BCADA7;
     padding: 0.8rem;
+  }
+  .banner p {
+    line-height: 2;
   }
 }
 
@@ -596,7 +606,7 @@ h1, h2, h3, li {
 }
 
 h1 {
-  font-size: 6vw;
+  font-size: 10vw;
 }
 
 h2 {
@@ -623,6 +633,9 @@ p {
     color: #566574;
     background-color: #BCADA7;
     padding: 0.8rem;
+  }
+  .banner p {
+    line-height: 2;
   }
 }
 
@@ -887,6 +900,7 @@ header .dropdown:hover .dropdown-content {
       -ms-flex-align: center;
           align-items: center;
   background-color: #1B2D44;
+  flex-flow: column;
 }
 
 .main-page .content a {
@@ -1145,7 +1159,7 @@ h1, h2, h3, li {
 }
 
 h1 {
-  font-size: 6vw;
+  font-size: 10vw;
 }
 
 h2 {
@@ -1172,6 +1186,9 @@ p {
     color: #566574;
     background-color: #BCADA7;
     padding: 0.8rem;
+  }
+  .banner p {
+    line-height: 2;
   }
 }
 
@@ -1200,7 +1217,7 @@ h1, h2, h3, li {
 }
 
 h1 {
-  font-size: 6vw;
+  font-size: 10vw;
 }
 
 h2 {
@@ -1227,6 +1244,9 @@ p {
     color: #566574;
     background-color: #BCADA7;
     padding: 0.8rem;
+  }
+  .banner p {
+    line-height: 2;
   }
 }
 
@@ -1491,6 +1511,7 @@ header .dropdown:hover .dropdown-content {
       -ms-flex-align: center;
           align-items: center;
   background-color: #1B2D44;
+  flex-flow: column;
 }
 
 .main-page .content a {
@@ -1647,7 +1668,7 @@ h1, h2, h3, li {
 }
 
 h1 {
-  font-size: 6vw;
+  font-size: 10vw;
 }
 
 h2 {
@@ -1674,6 +1695,9 @@ p {
     color: #566574;
     background-color: #BCADA7;
     padding: 0.8rem;
+  }
+  .banner p {
+    line-height: 2;
   }
 }
 
@@ -1702,7 +1726,7 @@ h1, h2, h3, li {
 }
 
 h1 {
-  font-size: 6vw;
+  font-size: 10vw;
 }
 
 h2 {
@@ -1729,6 +1753,9 @@ p {
     color: #566574;
     background-color: #BCADA7;
     padding: 0.8rem;
+  }
+  .banner p {
+    line-height: 2;
   }
 }
 
@@ -1993,6 +2020,7 @@ header .dropdown:hover .dropdown-content {
       -ms-flex-align: center;
           align-items: center;
   background-color: #1B2D44;
+  flex-flow: column;
 }
 
 .main-page .content a {
