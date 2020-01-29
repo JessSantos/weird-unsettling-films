@@ -1,0 +1,275 @@
+/*imports*/
+@import "basics";
+@import "typography";
+
+// /*general*/
+
+body {
+    margin: 0;
+}
+
+.html {
+    /*changes base font size to 10, so that using rems is easier*/
+    font-size: 0.625;
+}
+
+/*specific to the header and drop-down menu*/
+
+
+header {
+
+    .dropdown {
+        @include center-flex;
+        font-size: 3vw;
+
+        background-image: url(../img/main/tv.jpg);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        padding: 2vw;
+
+        a {
+            display: block;
+            margin: 1vw;
+            color: $light-green;
+            width: $mobile-width;
+            background-color: $dark-blue;
+
+            &:hover {
+                background-color: $light-green;
+                color: $dark-blue
+            }
+        }
+
+        .dropdown-content {
+            padding: 0;
+            margin: 0;
+            display: none;
+        }
+
+        &:hover {
+            .dropdown-button {
+                color: $dark-blue;
+                background-color: $light-green;
+            }
+
+            .dropdown-content {
+                @include center-flex;
+                display: block;
+            }
+        }
+    }
+
+    @media(min-width: $breakpoint-tablet) {
+        background-color: $dove-gray;
+
+        .dropdown {
+            width: 100%;
+            display: unset;
+
+            &:hover {
+                .dropdown-button {
+                    display: none;
+                }
+
+                a {
+                    background-color: $dove-gray;
+                    color: $mauve;
+                    width: unset;
+                }
+
+                .dropdown-content {
+                    @include center-flex;
+                    flex-flow: row;
+
+                    .dropdown-button {
+                        display: none;
+                    }
+                }
+
+            }
+
+            background-image: none;
+            background-color: $dove-gray;
+
+            .dropdown-button {
+                display: none;
+            }
+
+            a {
+                background-color: $dove-gray;
+                color: $mauve;
+                width: unset;
+                &:hover{
+                    color: $light-green;
+                }
+            }
+
+            .dropdown-content {
+                @include center-flex;
+                flex-flow: row;
+                                
+                .dropdown-button {
+                    display: none;
+                }
+
+                li{
+                    margin: 0 3vw;
+
+                }
+            }
+
+        }
+
+    }
+
+
+    @media (min-width: $breakpoint-desktop){
+        @include center-flex;
+        
+        .dropdown{
+            @include center-flex;
+            flex-flow: row;
+            margin: 0;
+            padding: 0;
+            max-width: $breakpoint-desktop;
+
+            a{
+                font-size: 2.7rem;
+            }
+
+            ul{
+                max-width: $breakpoint-desktop;
+                justify-content: space-between;
+
+                li, a{
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+
+    }
+
+}
+
+/*specific to the main page*/
+
+.main-page {
+
+    .banner {
+        background-color: $mauve;
+        color: $black;
+        @include center-flex;
+
+        .banner-container {
+            width: $mobile-width;
+            padding: 4vw;
+            margin: 0;
+
+        }
+    }
+
+    .explanation {
+        @include center-flex;
+
+        background-image: url(../img/main/tv-screen.png);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        background-position-y: 30%;
+
+        .explanation-container {
+            width: 90vw;
+            padding: 5vw;
+            text-align: left;
+
+            h2,
+            p {
+                padding: 1vw;
+                color: $mauve;
+                background-color: $dark-blue;
+            }
+        }
+    }
+
+    .content {
+        @include center-flex;
+        background-color: $dark-blue;
+
+        a {
+            color: $black;
+        }
+
+        article {
+            @include center-flex;
+            text-align: left;
+
+            width: 80vw;
+            padding: 5vw;
+            margin: 5vw;
+            background-color: $light-green;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        a:hover {
+            color: $mauve;
+
+            article {
+                background-color: $dove-gray;
+            }
+        }
+
+
+    }
+
+    .full-list {
+        @include center-flex;
+        background-image: url(../img/main/background-wall.png);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        color: $light-green;
+
+        article {
+            @include center-flex;
+            text-align: left;
+
+            width: 80vw;
+            padding: 5vw;
+            margin: 5vw;
+            background-color: $dark-blue;
+
+            &:hover {
+                background-color: $mauve;
+                color: $dark-blue;
+            }
+        }
+
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+footer {
+    @include center-flex;
+    background-color: $black;
+
+    .contact-logos {
+        @include center-flex;
+        flex-flow: row;
+    }
+
+    a,
+    i {
+        color: $mauve;
+        font-size: 5vw;
+        padding: 3vw;
+
+        &:hover {
+            color: $light-green;
+        }
+    }
+
+}

@@ -1,0 +1,32 @@
+/*imports*/
+@import "basics";
+@import "typography";
+@import "layout-mobile";
+@import "layout-tablet";
+
+@media (min-width: $breakpoint-desktop) {
+    @include center-flex;
+
+    .dropdown {
+      @include center-flex;
+      flex-flow: row;
+      margin: 0;
+      padding: 0;
+      max-width: $breakpoint-desktop;
+
+      a {
+        font-size: 2.7rem;
+      }
+
+      ul {
+        max-width: $breakpoint-desktop;
+        justify-content: space-between;
+
+        li,
+        a {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }

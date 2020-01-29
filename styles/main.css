@@ -3,15 +3,79 @@
 /*breakpoints*/
 /*container widths*/
 /*mixins*/
-/*colours*/
-/*breakpoints*/
-/*container widths*/
-/*mixins*/
-/*general colours*/
 /*fonts*/
 /*Roboto Mono*/
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Slabo+27px&display=swap");
+/*adding a font family*/
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px&display=swap");
+header a {
+  text-transform: lowercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, li {
+  font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+  font-size: 6vw;
+}
+
+h2 {
+  font-size: 3vw;
+}
+
+p {
+  font-family: "Slabo 27px", serif;
+  font-size: 2vw;
+}
+
+@media (min-width: 780px) {
+  header a {
+    font-size: 2.7rem;
+  }
+  .banner {
+    line-height: 1;
+  }
+  .banner h1 {
+    font-size: 4.8rem;
+    margin-bottom: none;
+  }
+  .banner span {
+    color: #566574;
+    background-color: #BCADA7;
+    padding: 0.8rem;
+  }
+}
+
+/*imports*/
+/*colours*/
+/*breakpoints*/
+/*container widths*/
+/*mixins*/
+/*fonts*/
+/*Roboto Mono*/
 /*adding a font family*/
 header a {
   text-transform: lowercase;
@@ -30,7 +94,7 @@ h1, h2, h3, li {
 }
 
 h1 {
-  font-size: 3.5vw;
+  font-size: 6vw;
 }
 
 h2 {
@@ -42,6 +106,24 @@ p {
   font-size: 2vw;
 }
 
+@media (min-width: 780px) {
+  header a {
+    font-size: 2.7rem;
+  }
+  .banner {
+    line-height: 1;
+  }
+  .banner h1 {
+    font-size: 4.8rem;
+    margin-bottom: none;
+  }
+  .banner span {
+    color: #566574;
+    background-color: #BCADA7;
+    padding: 0.8rem;
+  }
+}
+
 body {
   margin: 0;
 }
@@ -51,8 +133,8 @@ body {
   font-size: 0.625;
 }
 
-/*specific to the drop-down menu*/
-.dropdown {
+/*specific to the header and drop-down menu*/
+header .dropdown {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,13 +148,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 3vw;
-  background-image: url(/img/main/tv.jpg);
+  background-image: url(../img/main/tv.jpg);
   background-repeat: no-repeat;
   background-size: 100vw;
   padding: 2vw;
 }
 
-.dropdown a {
+header .dropdown a {
   display: block;
   margin: 1vw;
   color: #7CA790;
@@ -80,23 +162,23 @@ body {
   background-color: #1B2D44;
 }
 
-.dropdown a:hover {
+header .dropdown a:hover {
   background-color: #7CA790;
   color: #1B2D44;
 }
 
-.dropdown .dropdown-content {
+header .dropdown .dropdown-content {
   padding: 0;
   margin: 0;
   display: none;
 }
 
-.dropdown:hover .dropdown-button {
+header .dropdown:hover .dropdown-button {
   color: #1B2D44;
   background-color: #7CA790;
 }
 
-.dropdown:hover .dropdown-content {
+header .dropdown:hover .dropdown-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,10 +194,131 @@ body {
   display: block;
 }
 
+@media (min-width: 780px) {
+  header {
+    background-color: #566574;
+  }
+  header .dropdown {
+    width: 100%;
+    display: unset;
+    background-image: none;
+    background-color: #566574;
+  }
+  header .dropdown:hover .dropdown-button {
+    display: none;
+  }
+  header .dropdown:hover a {
+    background-color: #566574;
+    color: #BCADA7;
+    width: unset;
+  }
+  header .dropdown:hover .dropdown-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-flow: row;
+        flex-flow: row;
+  }
+  header .dropdown:hover .dropdown-content .dropdown-button {
+    display: none;
+  }
+  header .dropdown .dropdown-button {
+    display: none;
+  }
+  header .dropdown a {
+    background-color: #566574;
+    color: #BCADA7;
+    width: unset;
+  }
+  header .dropdown a:hover {
+    color: #7CA790;
+  }
+  header .dropdown .dropdown-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-flow: row;
+        flex-flow: row;
+  }
+  header .dropdown .dropdown-content .dropdown-button {
+    display: none;
+  }
+  header .dropdown .dropdown-content li {
+    margin: 0 3vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-flow: row;
+        flex-flow: row;
+    margin: 0;
+    padding: 0;
+    max-width: 1024px;
+  }
+  header .dropdown a {
+    font-size: 2.7rem;
+  }
+  header .dropdown ul {
+    max-width: 1024px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .dropdown ul li, header .dropdown ul a {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 /*specific to the main page*/
 .main-page .banner {
-  background-color: #000000;
-  color: #BCADA7;
+  background-color: #BCADA7;
+  color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,10 +336,7 @@ body {
 .main-page .banner .banner-container {
   width: 90vw;
   padding: 4vw;
-}
-
-.main-page .banner .banner-container p {
-  display: none;
+  margin: 0;
 }
 
 .main-page .explanation {
@@ -152,7 +352,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(/img/main/tv-screen.png);
+  background-image: url(../img/main/tv-screen.png);
   background-repeat: no-repeat;
   background-size: 100vw;
   background-position-y: 30%;
@@ -164,7 +364,8 @@ body {
   text-align: left;
 }
 
-.main-page .explanation .explanation-container h2, .main-page .explanation .explanation-container p {
+.main-page .explanation .explanation-container h2,
+.main-page .explanation .explanation-container p {
   padding: 1vw;
   color: #BCADA7;
   background-color: #1B2D44;
@@ -235,7 +436,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(/img/main/background-wall.png);
+  background-image: url(../img/main/background-wall.png);
   background-repeat: no-repeat;
   background-size: 100vw;
   color: #7CA790;
@@ -303,9 +504,1773 @@ footer .contact-logos {
       flex-flow: row;
 }
 
-footer a, footer i {
+footer a,
+footer i {
   color: #BCADA7;
   font-size: 5vw;
   padding: 3vw;
+}
+
+footer a:hover,
+footer i:hover {
+  color: #7CA790;
+}
+
+/*imports*/
+/*colours*/
+/*breakpoints*/
+/*container widths*/
+/*mixins*/
+/*fonts*/
+/*Roboto Mono*/
+/*adding a font family*/
+header a {
+  text-transform: lowercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, li {
+  font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+  font-size: 6vw;
+}
+
+h2 {
+  font-size: 3vw;
+}
+
+p {
+  font-family: "Slabo 27px", serif;
+  font-size: 2vw;
+}
+
+@media (min-width: 780px) {
+  header a {
+    font-size: 2.7rem;
+  }
+  .banner {
+    line-height: 1;
+  }
+  .banner h1 {
+    font-size: 4.8rem;
+    margin-bottom: none;
+  }
+  .banner span {
+    color: #566574;
+    background-color: #BCADA7;
+    padding: 0.8rem;
+  }
+}
+
+/*imports*/
+/*colours*/
+/*breakpoints*/
+/*container widths*/
+/*mixins*/
+/*fonts*/
+/*Roboto Mono*/
+/*adding a font family*/
+header a {
+  text-transform: lowercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, li {
+  font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+  font-size: 6vw;
+}
+
+h2 {
+  font-size: 3vw;
+}
+
+p {
+  font-family: "Slabo 27px", serif;
+  font-size: 2vw;
+}
+
+@media (min-width: 780px) {
+  header a {
+    font-size: 2.7rem;
+  }
+  .banner {
+    line-height: 1;
+  }
+  .banner h1 {
+    font-size: 4.8rem;
+    margin-bottom: none;
+  }
+  .banner span {
+    color: #566574;
+    background-color: #BCADA7;
+    padding: 0.8rem;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.html {
+  /*changes base font size to 10, so that using rems is easier*/
+  font-size: 0.625;
+}
+
+/*specific to the header and drop-down menu*/
+header .dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3vw;
+  background-image: url(../img/main/tv.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  padding: 2vw;
+}
+
+header .dropdown a {
+  display: block;
+  margin: 1vw;
+  color: #7CA790;
+  width: 90vw;
+  background-color: #1B2D44;
+}
+
+header .dropdown a:hover {
+  background-color: #7CA790;
+  color: #1B2D44;
+}
+
+header .dropdown .dropdown-content {
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+header .dropdown:hover .dropdown-button {
+  color: #1B2D44;
+  background-color: #7CA790;
+}
+
+header .dropdown:hover .dropdown-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: block;
+}
+
+@media (min-width: 780px) {
+  header {
+    background-color: #566574;
+  }
+  header .dropdown {
+    width: 100%;
+    display: unset;
+    background-image: none;
+    background-color: #566574;
+  }
+  header .dropdown:hover .dropdown-button {
+    display: none;
+  }
+  header .dropdown:hover a {
+    background-color: #566574;
+    color: #BCADA7;
+    width: unset;
+  }
+  header .dropdown:hover .dropdown-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-flow: row;
+        flex-flow: row;
+  }
+  header .dropdown:hover .dropdown-content .dropdown-button {
+    display: none;
+  }
+  header .dropdown .dropdown-button {
+    display: none;
+  }
+  header .dropdown a {
+    background-color: #566574;
+    color: #BCADA7;
+    width: unset;
+  }
+  header .dropdown a:hover {
+    color: #7CA790;
+  }
+  header .dropdown .dropdown-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-flow: row;
+        flex-flow: row;
+  }
+  header .dropdown .dropdown-content .dropdown-button {
+    display: none;
+  }
+  header .dropdown .dropdown-content li {
+    margin: 0 3vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-flow: row;
+        flex-flow: row;
+    margin: 0;
+    padding: 0;
+    max-width: 1024px;
+  }
+  header .dropdown a {
+    font-size: 2.7rem;
+  }
+  header .dropdown ul {
+    max-width: 1024px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .dropdown ul li, header .dropdown ul a {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/*specific to the main page*/
+.main-page .banner {
+  background-color: #BCADA7;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-page .banner .banner-container {
+  width: 90vw;
+  padding: 4vw;
+  margin: 0;
+}
+
+.main-page .explanation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/main/tv-screen.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position-y: 30%;
+}
+
+.main-page .explanation .explanation-container {
+  width: 90vw;
+  padding: 5vw;
+  text-align: left;
+}
+
+.main-page .explanation .explanation-container h2,
+.main-page .explanation .explanation-container p {
+  padding: 1vw;
+  color: #BCADA7;
+  background-color: #1B2D44;
+}
+
+.main-page .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1B2D44;
+}
+
+.main-page .content a {
+  color: #000000;
+}
+
+.main-page .content article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  width: 80vw;
+  padding: 5vw;
+  margin: 5vw;
+  background-color: #7CA790;
+}
+
+.main-page .content h2 {
+  text-align: center;
+}
+
+.main-page .content a:hover {
+  color: #BCADA7;
+}
+
+.main-page .content a:hover article {
+  background-color: #566574;
+}
+
+.main-page .full-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/main/background-wall.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  color: #7CA790;
+}
+
+.main-page .full-list article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  width: 80vw;
+  padding: 5vw;
+  margin: 5vw;
+  background-color: #1B2D44;
+}
+
+.main-page .full-list article:hover {
+  background-color: #BCADA7;
+  color: #1B2D44;
+}
+
+.main-page .full-list h2 {
+  text-align: center;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000000;
+}
+
+footer .contact-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-flow: row;
+      flex-flow: row;
+}
+
+footer a,
+footer i {
+  color: #BCADA7;
+  font-size: 5vw;
+  padding: 3vw;
+}
+
+footer a:hover,
+footer i:hover {
+  color: #7CA790;
+}
+
+@media (min-width: 780px) {
+  header {
+    background-color: #566574;
+  }
+  header .dropdown {
+    width: 100vw;
+    display: unset;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-flow: row;
+        flex-flow: row;
+  }
+  header .dropdown .dropdown-button {
+    display: none;
+  }
+  header .dropdown a {
+    font-size: 2vw;
+    margin: none;
+  }
+  header .dropdown a:hover a {
+    background-color: #566574;
+    color: #7CA790;
+  }
+  header .dropdown a .dropdown-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-flow: row;
+        flex-flow: row;
+  }
+  header .dropdown a .dropdown-content .dropdown-button {
+    display: none;
+  }
+  .banner {
+    background-color: none;
+    background-image: url("../../img/main/tv.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    text-align: left;
+    padding-top: 35rem;
+  }
+  .banner .banner-container {
+    min-height: 50rem;
+    width: 4.2rem;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    text-align: left;
+    margin-left: 10rem;
+    padding: 0;
+  }
+  .main-page .explanation {
+    background-image: none;
+    background-color: #BCADA7;
+  }
+  .main-page .explanation h2, .main-page .explanation p {
+    color: #1B2D44;
+  }
+  .main-page div.content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-page div.content a article {
+    width: 31.5vw;
+    height: 45vw;
+    margin: 7vw 2rem;
+  }
+}
+
+/*imports*/
+/*colours*/
+/*breakpoints*/
+/*container widths*/
+/*mixins*/
+/*fonts*/
+/*Roboto Mono*/
+/*adding a font family*/
+header a {
+  text-transform: lowercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, li {
+  font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+  font-size: 6vw;
+}
+
+h2 {
+  font-size: 3vw;
+}
+
+p {
+  font-family: "Slabo 27px", serif;
+  font-size: 2vw;
+}
+
+@media (min-width: 780px) {
+  header a {
+    font-size: 2.7rem;
+  }
+  .banner {
+    line-height: 1;
+  }
+  .banner h1 {
+    font-size: 4.8rem;
+    margin-bottom: none;
+  }
+  .banner span {
+    color: #566574;
+    background-color: #BCADA7;
+    padding: 0.8rem;
+  }
+}
+
+/*imports*/
+/*colours*/
+/*breakpoints*/
+/*container widths*/
+/*mixins*/
+/*fonts*/
+/*Roboto Mono*/
+/*adding a font family*/
+header a {
+  text-transform: lowercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, li {
+  font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+  font-size: 6vw;
+}
+
+h2 {
+  font-size: 3vw;
+}
+
+p {
+  font-family: "Slabo 27px", serif;
+  font-size: 2vw;
+}
+
+@media (min-width: 780px) {
+  header a {
+    font-size: 2.7rem;
+  }
+  .banner {
+    line-height: 1;
+  }
+  .banner h1 {
+    font-size: 4.8rem;
+    margin-bottom: none;
+  }
+  .banner span {
+    color: #566574;
+    background-color: #BCADA7;
+    padding: 0.8rem;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.html {
+  /*changes base font size to 10, so that using rems is easier*/
+  font-size: 0.625;
+}
+
+/*specific to the header and drop-down menu*/
+header .dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3vw;
+  background-image: url(../img/main/tv.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  padding: 2vw;
+}
+
+header .dropdown a {
+  display: block;
+  margin: 1vw;
+  color: #7CA790;
+  width: 90vw;
+  background-color: #1B2D44;
+}
+
+header .dropdown a:hover {
+  background-color: #7CA790;
+  color: #1B2D44;
+}
+
+header .dropdown .dropdown-content {
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+header .dropdown:hover .dropdown-button {
+  color: #1B2D44;
+  background-color: #7CA790;
+}
+
+header .dropdown:hover .dropdown-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: block;
+}
+
+@media (min-width: 780px) {
+  header {
+    background-color: #566574;
+  }
+  header .dropdown {
+    width: 100%;
+    display: unset;
+    background-image: none;
+    background-color: #566574;
+  }
+  header .dropdown:hover .dropdown-button {
+    display: none;
+  }
+  header .dropdown:hover a {
+    background-color: #566574;
+    color: #BCADA7;
+    width: unset;
+  }
+  header .dropdown:hover .dropdown-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-flow: row;
+        flex-flow: row;
+  }
+  header .dropdown:hover .dropdown-content .dropdown-button {
+    display: none;
+  }
+  header .dropdown .dropdown-button {
+    display: none;
+  }
+  header .dropdown a {
+    background-color: #566574;
+    color: #BCADA7;
+    width: unset;
+  }
+  header .dropdown a:hover {
+    color: #7CA790;
+  }
+  header .dropdown .dropdown-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-flow: row;
+        flex-flow: row;
+  }
+  header .dropdown .dropdown-content .dropdown-button {
+    display: none;
+  }
+  header .dropdown .dropdown-content li {
+    margin: 0 3vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-flow: row;
+        flex-flow: row;
+    margin: 0;
+    padding: 0;
+    max-width: 1024px;
+  }
+  header .dropdown a {
+    font-size: 2.7rem;
+  }
+  header .dropdown ul {
+    max-width: 1024px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .dropdown ul li, header .dropdown ul a {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/*specific to the main page*/
+.main-page .banner {
+  background-color: #BCADA7;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-page .banner .banner-container {
+  width: 90vw;
+  padding: 4vw;
+  margin: 0;
+}
+
+.main-page .explanation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/main/tv-screen.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position-y: 30%;
+}
+
+.main-page .explanation .explanation-container {
+  width: 90vw;
+  padding: 5vw;
+  text-align: left;
+}
+
+.main-page .explanation .explanation-container h2,
+.main-page .explanation .explanation-container p {
+  padding: 1vw;
+  color: #BCADA7;
+  background-color: #1B2D44;
+}
+
+.main-page .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1B2D44;
+}
+
+.main-page .content a {
+  color: #000000;
+}
+
+.main-page .content article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  width: 80vw;
+  padding: 5vw;
+  margin: 5vw;
+  background-color: #7CA790;
+}
+
+.main-page .content h2 {
+  text-align: center;
+}
+
+.main-page .content a:hover {
+  color: #BCADA7;
+}
+
+.main-page .content a:hover article {
+  background-color: #566574;
+}
+
+.main-page .full-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/main/background-wall.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  color: #7CA790;
+}
+
+.main-page .full-list article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  width: 80vw;
+  padding: 5vw;
+  margin: 5vw;
+  background-color: #1B2D44;
+}
+
+.main-page .full-list article:hover {
+  background-color: #BCADA7;
+  color: #1B2D44;
+}
+
+.main-page .full-list h2 {
+  text-align: center;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000000;
+}
+
+footer .contact-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-flow: row;
+      flex-flow: row;
+}
+
+footer a,
+footer i {
+  color: #BCADA7;
+  font-size: 5vw;
+  padding: 3vw;
+}
+
+footer a:hover,
+footer i:hover {
+  color: #7CA790;
+}
+
+/*imports*/
+/*colours*/
+/*breakpoints*/
+/*container widths*/
+/*mixins*/
+/*fonts*/
+/*Roboto Mono*/
+/*adding a font family*/
+header a {
+  text-transform: lowercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, li {
+  font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+  font-size: 6vw;
+}
+
+h2 {
+  font-size: 3vw;
+}
+
+p {
+  font-family: "Slabo 27px", serif;
+  font-size: 2vw;
+}
+
+@media (min-width: 780px) {
+  header a {
+    font-size: 2.7rem;
+  }
+  .banner {
+    line-height: 1;
+  }
+  .banner h1 {
+    font-size: 4.8rem;
+    margin-bottom: none;
+  }
+  .banner span {
+    color: #566574;
+    background-color: #BCADA7;
+    padding: 0.8rem;
+  }
+}
+
+/*imports*/
+/*colours*/
+/*breakpoints*/
+/*container widths*/
+/*mixins*/
+/*fonts*/
+/*Roboto Mono*/
+/*adding a font family*/
+header a {
+  text-transform: lowercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, li {
+  font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+  font-size: 6vw;
+}
+
+h2 {
+  font-size: 3vw;
+}
+
+p {
+  font-family: "Slabo 27px", serif;
+  font-size: 2vw;
+}
+
+@media (min-width: 780px) {
+  header a {
+    font-size: 2.7rem;
+  }
+  .banner {
+    line-height: 1;
+  }
+  .banner h1 {
+    font-size: 4.8rem;
+    margin-bottom: none;
+  }
+  .banner span {
+    color: #566574;
+    background-color: #BCADA7;
+    padding: 0.8rem;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.html {
+  /*changes base font size to 10, so that using rems is easier*/
+  font-size: 0.625;
+}
+
+/*specific to the header and drop-down menu*/
+header .dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3vw;
+  background-image: url(../img/main/tv.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  padding: 2vw;
+}
+
+header .dropdown a {
+  display: block;
+  margin: 1vw;
+  color: #7CA790;
+  width: 90vw;
+  background-color: #1B2D44;
+}
+
+header .dropdown a:hover {
+  background-color: #7CA790;
+  color: #1B2D44;
+}
+
+header .dropdown .dropdown-content {
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+header .dropdown:hover .dropdown-button {
+  color: #1B2D44;
+  background-color: #7CA790;
+}
+
+header .dropdown:hover .dropdown-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: block;
+}
+
+@media (min-width: 780px) {
+  header {
+    background-color: #566574;
+  }
+  header .dropdown {
+    width: 100%;
+    display: unset;
+    background-image: none;
+    background-color: #566574;
+  }
+  header .dropdown:hover .dropdown-button {
+    display: none;
+  }
+  header .dropdown:hover a {
+    background-color: #566574;
+    color: #BCADA7;
+    width: unset;
+  }
+  header .dropdown:hover .dropdown-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-flow: row;
+        flex-flow: row;
+  }
+  header .dropdown:hover .dropdown-content .dropdown-button {
+    display: none;
+  }
+  header .dropdown .dropdown-button {
+    display: none;
+  }
+  header .dropdown a {
+    background-color: #566574;
+    color: #BCADA7;
+    width: unset;
+  }
+  header .dropdown a:hover {
+    color: #7CA790;
+  }
+  header .dropdown .dropdown-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-flow: row;
+        flex-flow: row;
+  }
+  header .dropdown .dropdown-content .dropdown-button {
+    display: none;
+  }
+  header .dropdown .dropdown-content li {
+    margin: 0 3vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-flow: row;
+        flex-flow: row;
+    margin: 0;
+    padding: 0;
+    max-width: 1024px;
+  }
+  header .dropdown a {
+    font-size: 2.7rem;
+  }
+  header .dropdown ul {
+    max-width: 1024px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .dropdown ul li, header .dropdown ul a {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/*specific to the main page*/
+.main-page .banner {
+  background-color: #BCADA7;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-page .banner .banner-container {
+  width: 90vw;
+  padding: 4vw;
+  margin: 0;
+}
+
+.main-page .explanation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/main/tv-screen.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position-y: 30%;
+}
+
+.main-page .explanation .explanation-container {
+  width: 90vw;
+  padding: 5vw;
+  text-align: left;
+}
+
+.main-page .explanation .explanation-container h2,
+.main-page .explanation .explanation-container p {
+  padding: 1vw;
+  color: #BCADA7;
+  background-color: #1B2D44;
+}
+
+.main-page .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1B2D44;
+}
+
+.main-page .content a {
+  color: #000000;
+}
+
+.main-page .content article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  width: 80vw;
+  padding: 5vw;
+  margin: 5vw;
+  background-color: #7CA790;
+}
+
+.main-page .content h2 {
+  text-align: center;
+}
+
+.main-page .content a:hover {
+  color: #BCADA7;
+}
+
+.main-page .content a:hover article {
+  background-color: #566574;
+}
+
+.main-page .full-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/main/background-wall.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  color: #7CA790;
+}
+
+.main-page .full-list article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  width: 80vw;
+  padding: 5vw;
+  margin: 5vw;
+  background-color: #1B2D44;
+}
+
+.main-page .full-list article:hover {
+  background-color: #BCADA7;
+  color: #1B2D44;
+}
+
+.main-page .full-list h2 {
+  text-align: center;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000000;
+}
+
+footer .contact-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-flow: row;
+      flex-flow: row;
+}
+
+footer a,
+footer i {
+  color: #BCADA7;
+  font-size: 5vw;
+  padding: 3vw;
+}
+
+footer a:hover,
+footer i:hover {
+  color: #7CA790;
+}
+
+@media (min-width: 780px) {
+  header {
+    background-color: #566574;
+  }
+  header .dropdown {
+    width: 100vw;
+    display: unset;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-flow: row;
+        flex-flow: row;
+  }
+  header .dropdown .dropdown-button {
+    display: none;
+  }
+  header .dropdown a {
+    font-size: 2vw;
+    margin: none;
+  }
+  header .dropdown a:hover a {
+    background-color: #566574;
+    color: #7CA790;
+  }
+  header .dropdown a .dropdown-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-flow: row;
+        flex-flow: row;
+  }
+  header .dropdown a .dropdown-content .dropdown-button {
+    display: none;
+  }
+  .banner {
+    background-color: none;
+    background-image: url("../../img/main/tv.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    text-align: left;
+    padding-top: 35rem;
+  }
+  .banner .banner-container {
+    min-height: 50rem;
+    width: 4.2rem;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    text-align: left;
+    margin-left: 10rem;
+    padding: 0;
+  }
+  .main-page .explanation {
+    background-image: none;
+    background-color: #BCADA7;
+  }
+  .main-page .explanation h2, .main-page .explanation p {
+    color: #1B2D44;
+  }
+  .main-page div.content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-page div.content a article {
+    width: 31.5vw;
+    height: 45vw;
+    margin: 7vw 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  .dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-flow: row;
+        flex-flow: row;
+    margin: 0;
+    padding: 0;
+    max-width: 1024px;
+  }
+  .dropdown a {
+    font-size: 2.7rem;
+  }
+  .dropdown ul {
+    max-width: 1024px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .dropdown ul li,
+  .dropdown ul a {
+    margin: 0;
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
