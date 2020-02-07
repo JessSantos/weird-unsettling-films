@@ -274,3 +274,32 @@ footer {
     }
 
 }
+
+/*about page*/
+
+div.about-page{
+    background-color: $mauve;
+    color: $dark-blue;
+    padding: 1rem;
+    h1{
+        font-size: 5vw;
+    }
+}
+
+/*construction page*/
+
+.construction-page div{
+    color: $dark-blue;
+    background-color: $mauve;
+    padding: 1rem;
+}
+
+/*articles page*/
+
+.articles-page{
+    h1{
+        font-size: 5vw;
+    }
+    padding: 1rem;
+    background-color: $mauve;
+}

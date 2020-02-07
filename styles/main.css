@@ -585,6 +585,34 @@ footer i:hover {
   color: #7CA790;
 }
 
+/*about page*/
+div.about-page {
+  background-color: #BCADA7;
+  color: #1B2D44;
+  padding: 1rem;
+}
+
+div.about-page h1 {
+  font-size: 5vw;
+}
+
+/*construction page*/
+.construction-page div {
+  color: #1B2D44;
+  background-color: #BCADA7;
+  padding: 1rem;
+}
+
+/*articles page*/
+.articles-page {
+  padding: 1rem;
+  background-color: #BCADA7;
+}
+
+.articles-page h1 {
+  font-size: 5vw;
+}
+
 /*imports*/
 /*colours*/
 /*breakpoints*/
@@ -1154,6 +1182,34 @@ footer i {
 footer a:hover,
 footer i:hover {
   color: #7CA790;
+}
+
+/*about page*/
+div.about-page {
+  background-color: #BCADA7;
+  color: #1B2D44;
+  padding: 1rem;
+}
+
+div.about-page h1 {
+  font-size: 5vw;
+}
+
+/*construction page*/
+.construction-page div {
+  color: #1B2D44;
+  background-color: #BCADA7;
+  padding: 1rem;
+}
+
+/*articles page*/
+.articles-page {
+  padding: 1rem;
+  background-color: #BCADA7;
+}
+
+.articles-page h1 {
+  font-size: 5vw;
 }
 
 @media (min-width: 780px) {
@@ -1236,7 +1292,8 @@ footer i:hover {
     background-image: none;
     background-color: #BCADA7;
   }
-  .main-page .explanation h2, .main-page .explanation p {
+  .main-page .explanation h2,
+  .main-page .explanation p {
     color: #1B2D44;
   }
   .main-page div.content {
@@ -1256,6 +1313,12 @@ footer i:hover {
     height: 45vw;
     margin: 7vw 2rem;
   }
+  .about-page h1 {
+    font-size: 7rem;
+  }
+  .articles-page h1 {
+    font-size: 7rem;
+  }
 }
 
 /*imports*/
@@ -1829,6 +1892,34 @@ footer i:hover {
   color: #7CA790;
 }
 
+/*about page*/
+div.about-page {
+  background-color: #BCADA7;
+  color: #1B2D44;
+  padding: 1rem;
+}
+
+div.about-page h1 {
+  font-size: 5vw;
+}
+
+/*construction page*/
+.construction-page div {
+  color: #1B2D44;
+  background-color: #BCADA7;
+  padding: 1rem;
+}
+
+/*articles page*/
+.articles-page {
+  padding: 1rem;
+  background-color: #BCADA7;
+}
+
+.articles-page h1 {
+  font-size: 5vw;
+}
+
 /*imports*/
 /*colours*/
 /*breakpoints*/
@@ -2398,6 +2489,34 @@ footer i {
 footer a:hover,
 footer i:hover {
   color: #7CA790;
+}
+
+/*about page*/
+div.about-page {
+  background-color: #BCADA7;
+  color: #1B2D44;
+  padding: 1rem;
+}
+
+div.about-page h1 {
+  font-size: 5vw;
+}
+
+/*construction page*/
+.construction-page div {
+  color: #1B2D44;
+  background-color: #BCADA7;
+  padding: 1rem;
+}
+
+/*articles page*/
+.articles-page {
+  padding: 1rem;
+  background-color: #BCADA7;
+}
+
+.articles-page h1 {
+  font-size: 5vw;
 }
 
 @media (min-width: 780px) {
@@ -2480,7 +2599,8 @@ footer i:hover {
     background-image: none;
     background-color: #BCADA7;
   }
-  .main-page .explanation h2, .main-page .explanation p {
+  .main-page .explanation h2,
+  .main-page .explanation p {
     color: #1B2D44;
   }
   .main-page div.content {
@@ -2499,6 +2619,12 @@ footer i:hover {
     width: 31.5vw;
     height: 45vw;
     margin: 7vw 2rem;
+  }
+  .about-page h1 {
+    font-size: 7rem;
+  }
+  .articles-page h1 {
+    font-size: 7rem;
   }
 }
 
@@ -2516,7 +2642,7 @@ footer i:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-image: url("../../img/general/tv-background-tile.svg");
+    background-image: url("../img/general/tv-background-tile.svg");
     background-size: 7rem;
     background-repeat: repeat;
   }

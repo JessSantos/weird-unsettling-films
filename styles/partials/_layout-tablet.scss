@@ -15,21 +15,22 @@
       padding: 0;
       @include center-flex;
       flex-flow: row;
-      
+
       .dropdown-button {
         display: none;
       }
 
 
-      a{
+      a {
         font-size: 2vw;
         margin: none;
+
         &:hover {
           a {
             background-color: $dove-gray;
             color: $light-green;
           }
-      }
+        }
 
 
         .dropdown-content {
@@ -53,7 +54,7 @@
 
     justify-content: left;
     text-align: left;
-    
+
     padding-top: 35rem;
 
     .banner-container {
@@ -69,27 +70,40 @@
   }
 
   .main-page {
-  .explanation {
-    background-image: none;
-    background-color: $mauve;
-    
+    .explanation {
+      background-image: none;
+      background-color: $mauve;
 
-      h2, p{
+
+      h2,
+      p {
         color: $dark-blue;
       }
     }
 
-    div.content{
+    div.content {
       display: flex;
       flex-flow: row;
       justify-content: center;
 
-      a article{
+      a article {
         width: 31.5vw;
         height: 45vw;
         margin: 7vw 2rem;
       }
     }
-  
-}
+
+  }
+
+  .about-page{
+    h1 {
+      font-size: 7rem;
+    }
+  }
+
+  .articles-page {
+    h1 {
+      font-size: 7rem;
+    }
+  }
 }
