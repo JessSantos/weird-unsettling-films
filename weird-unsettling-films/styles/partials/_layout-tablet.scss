@@ -1,0 +1,109 @@
+/*imports*/
+@import "basics";
+@import "typography";
+@import "layout-mobile";
+
+// /*general*/
+@media (min-width: $breakpoint-tablet) {
+  header {
+    background-color: $dove-gray;
+
+    .dropdown {
+      width: 100vw;
+      display: unset;
+      margin: 0;
+      padding: 0;
+      @include center-flex;
+      flex-flow: row;
+
+      .dropdown-button {
+        display: none;
+      }
+
+
+      a {
+        font-size: 2vw;
+        margin: none;
+
+        &:hover {
+          a {
+            background-color: $dove-gray;
+            color: $light-green;
+          }
+        }
+
+
+        .dropdown-content {
+          @include center-flex;
+          flex-flow: row;
+
+          .dropdown-button {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .banner {
+    background-color: none;
+    background-image: url("../img/main/tv.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    justify-content: left;
+    text-align: left;
+
+    padding-top: 35rem;
+
+    .banner-container {
+      min-height: 50rem;
+      width: 4.2rem;
+
+      justify-content: left;
+      text-align: left;
+      margin-left: 10rem;
+
+      padding: 0;
+    }
+  }
+
+  .main-page {
+    .explanation {
+      background-image: none;
+      background-color: $mauve;
+
+
+      h2,
+      p {
+        color: $dark-blue;
+      }
+    }
+
+    div.content {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+
+      a article {
+        width: 31.5vw;
+        height: 45vw;
+        margin: 7vw 2rem;
+      }
+    }
+
+  }
+
+  .about-page{
+    h1 {
+      font-size: 7rem;
+    }
+  }
+
+  .articles-page {
+    h1 {
+      font-size: 7rem;
+    }
+  }
+}

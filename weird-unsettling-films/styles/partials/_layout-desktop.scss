@@ -1,0 +1,88 @@
+/*imports*/
+@import "basics";
+@import "typography";
+@import "layout-mobile";
+@import "layout-tablet";
+
+@media (min-width: $breakpoint-desktop) {
+  html {
+    @include center-flex;
+
+    background-image: url("../img/general/tv-background-tile.svg");
+    background-size: 7rem;
+    background-repeat: repeat;
+
+    body {
+      max-width: $breakpoint-desktop;
+
+      header {
+        .dropdown {
+          @include center-flex;
+
+          li,
+          a {
+            font-size: 2.2rem;
+            margin: 0;
+          }
+          .dropdown-content li {
+            margin: 1rem;
+          }
+        }
+      }
+
+      .main-page {
+        .banner {
+          position: relative;
+          height: 70rem;
+
+          .banner-container {
+            padding: 1rem;
+            margin: 0;
+
+            position: absolute;
+            left: 0;
+            top: 25%;
+          }
+        }
+        .full-list > article {
+          max-width: 60rem;
+          padding: 0.5rem;
+        }
+      }
+      #explanation {
+        .explanation-container {
+          max-width: $breakpoint-desktop;
+          padding: 1rem;
+          h2, p{
+            margin: 1rem;
+            color: $dark-blue;
+            background-color: $mauve;
+          }
+        }
+      }
+
+      #content {
+        padding: 1rem;
+
+        a {
+          @include center-flex;
+          max-width: $breakpoint-desktop;
+          width: 100%$breakpoint-desktop;
+          padding: 0;
+          margin: 0;
+
+            article#films, article#shorts{
+            width: 25rem;
+            max-width: 25rem;
+            margin: 1rem;
+            padding: 1rem;
+            height: 50rem;}
+          
+        }
+      }
+    }
+    .contact-logos{
+      max-width: $breakpoint-desktop;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+/*colours*/
+
+$dark-blue: #1B2D44;
+$dove-gray: #566574;
+$light-green: #7CA790;
+$dark-green: #667973;
+$light-yellow: #D9CFA9;
+$sand: #BCB097;
+$dark-sand: #847973;
+$mauve: #BCADA7;
+$black: #000000;
+$white: #FFFFFF;
+
+/*breakpoints*/
+$breakpoint-phone-sm: 320px;
+$breakpoint-phone-lg: 480px;
+$breakpoint-tablet: 780px;
+$breakpoint-desktop: 1024px;
+
+/*container widths*/
+$mobile-width: 90vw;
+
+/*mixins*/
+
+@mixin center-flex{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    
+}
